@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <p class="informacion selectDisable">i</p>
+<!-- Calculadora -->
+    <section class="calcul__container">
+        <div class="calculator selectDisable">
+            <div class="display">
+                <div class="display__screen">
+                    <div class="pantalla">
+                        <p class="pantalla__text"></p>
+                    </div>
+                    <div class="subpantalla">
+                        <p id="subpantalla" class="subpantalla__text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="keyboard">
+
+                <div class="ac boton__container">
+                    <button id="clear" class="botones" draggable="true"> C </button>
+                </div>
+                <div class="porciento boton__container">
+                    <button id="resto" class="botones" draggable="true"> % </button>
+                </div>
+                <div class="borrar boton__container">
+                    <button id="borrar" class="botones" draggable="true"> D </button>
+                </div>
+                <div class="suma boton__container">
+                    <button id="suma" class="botones" draggable="true"> + </button>
+                </div>
+
+                <div class="uno boton__container">
+                    <button id="uno" class="botones" draggable="true"> 1 </button>
+                </div>
+                <div class="dos boton__container">
+                    <button id="dos" class="botones" draggable="true"> 2 </button>
+                </div>
+                <div class="tres boton__container">
+                    <button id="tres" class="botones" draggable="true"> 3 </button>
+                </div>
+                <div class="menos boton__container">
+                    <button id="resta" class="botones" draggable="true"> - </button>
+                </div>
+
+                <div class="cuatro boton__container">
+                    <button id="cuatro" class="botones" draggable="true"> 4 </button>
+                </div>
+                <div class="cinco boton__container">
+                    <button id="cinco" class="botones" draggable="true"> 5 </button>
+                </div>
+                <div class="seis boton__container">
+                    <button id="seis" class="botones" draggable="true"> 6 </button>
+                </div>
+                <div class="mult boton__container">
+                    <button id="mult" class="botones" draggable="true"> * </button>
+                </div>
+
+                <div class="siete boton__container">
+                    <button id="siete" class="botones" draggable="true"> 7 </button>
+                </div>
+                <div class="ocho boton__container">
+                    <button id="ocho" class="botones" draggable="true"> 8 </button>
+                </div>
+                <div class="nueve boton__container">
+                    <button id="nueve" class="botones" draggable="true"> 9 </button>
+                </div>
+                <div class="div boton__container">
+                    <button id="divis" class="botones" draggable="true"> / </button>
+                </div>
+
+                <div class="cero boton__container">
+                    <button id="cero" class="botones" draggable="true"> 0 </button>
+                </div>
+                <div class="point boton__container">
+                    <button id="punto" class="botones" draggable="true"> . </button>
+                </div>
+                <div class="igual boton__container">
+                    <button id="igual" class="botones " draggable="true"> = </button>
+                </div>
+                <div class="vacio boton__container">
+
+                </div>
+
+            </div>
+            <button class="agregar__espacios" title="Agregar espacios para más botones">+</button>
+        </div>
+    </section>
+
+<!-- Módulos -->
+    <section class="modulos__funcionales">
+        <div class="module__title">
+            <h2>Botones intercambiables</h2>
+        </div>
+        <div id="modules" class="module__container">
+            <!-- Crea nuevos botones aquí, con nuevas funciones que puedan ser usadas en la calculadora -->
+            <button id="signo" class="botones" draggable="true">+/-</button>
+            <button id="potencia" class="botones" draggable="true">^</button>
+        </div>
+    </section>
+
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
